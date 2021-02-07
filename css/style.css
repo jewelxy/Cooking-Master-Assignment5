@@ -1,0 +1,23 @@
+body{
+    background: #edd263;
+}
+.navbar-background{
+    background: #edd263;
+}
+#mealDetails{
+    margin-bottom: 20px;
+}
+#alertMessage{
+    display: none;
+    background: cyan;
+}
+#searchMealBtn{
+    background: #3B2D64;
+}
+.card ul{
+  list-style-type: none;
+}
+.card ul li:before {
+  content: '✓';
+  padding: 10px;
+}

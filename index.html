@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking Master</title>
+    <!--stylesheet link -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Area -->
+    <nav class="navbar navbar-expand-lg navbar-light container navbar-background">
+        <div class="container-fluid">
+          <a class="navbar-brand fw-bolder" href="index.html">Cooking Master</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active fw-bold" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="#">Recipes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="#">Blog</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Search Section -->
+      <div class="col-md-6 m-auto mt-4 mb-5">
+        <div class="input-group input-group-lg mb-3">
+            <input id="searchMealName" type="text" class="form-control" placeholder="Search for Meal..." aria-label="Search for Meal..." aria-describedby="button-addon2">
+            <button id="searchMealBtn" class="btn btn-success" type="button">Search</button>
+          </div>
+      </div>
+
+      <!--  alert message Section -->
+      <div id="alertMessage" class="alert alert-dark alert-dismissible fade show col-md-8 fw-bold m-auto mb-2" role="alert">
+        <strong>আহ ! আমার ক্ষুদা লাগছে </strong> কিন্তু খাবার খুঁজে পাইতেছি না
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+
+      <!-- Meals Section-->
+      <div id="mealDetails"></div>
+
+      <!-- Meals show Section -->
+      <section class="container">
+            <div id="mealArea" class="row">
+
+            </div>
+      </section>
+
+
+    <!-- Script Here -->
+    <script src="app.js"></script>
+</body>
+</html>
